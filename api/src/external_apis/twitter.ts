@@ -54,7 +54,7 @@ export const getTwitterUser = async (twitterName: string) => {
         console.log('// getTwitterUser error')
         // console.log(error)
         console.log(error.rateLimit)
-        const resetTime = new Date(error.rateLimit.reset * 1000)
+        const resetTime = new Date((error?.rateLimit?.reset || 0) * 1000)
         console.log(resetTime)
         console.log(error.data)
         return
