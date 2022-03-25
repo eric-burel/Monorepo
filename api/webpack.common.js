@@ -39,6 +39,10 @@ module.exports = {
     node: false,
     plugins: [
         new WriteFilePlugin(),
-        new CopyWebpackPlugin({ patterns: [{ from: path.join(__dirname, 'public'), to: path.join(__dirname, 'dist/public') }] })
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: path.join(__dirname, 'public'), to: path.join(__dirname, 'dist/public') }
+            ]
+        })
     ]
 }

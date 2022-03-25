@@ -13,6 +13,9 @@ Create an `.env` file at the root of the `api` directory:
 MONGO_URI=***
 MONGO_DB_NAME=***
 
+# For downloading translations repos https://github.com/settings/tokens/new?scopes=repo
+GITHUB_TOKEN=***
+
 # Keys used to encrypt data and authenticate RPCs
 ENCRYPTION_KEY=***
 SECRET_KEY=***

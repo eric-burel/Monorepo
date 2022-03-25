@@ -182,7 +182,7 @@ export const getLocaleStrings = (locale: Locale, contexts?: string[]) => {
     const strings = stringFiles
         .map((sf: StringFile) => {
             let { strings, prefix, context } = sf
-            if (strings === null) {
+            if (!strings) {
                 return []
             }
 
